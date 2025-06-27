@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>b9fb6f3a-0195-1000-e4e0-c531e041d4ce</groupId>
+    <name>reading excel</name>
+    <snippet>
+        <processGroups>
+            <id>7f540074-7a13-3ec3-0000-000000000000</id>
+            <parentGroupId>26096b85-bfd9-3348-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>7f540074-7a13-3ec3-84c1-f6a6fed1fc45</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>2b831a2a-2c6e-31d4-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <versionedComponentId>2b831a2a-2c6e-31d4-8614-a7947ac47684</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>960.0</x>
+                        <y>272.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>0daf73d0-b141-3ad7-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>0daf73d0-b141-3ad7-be27-8ddc80a0a425</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>f493dcc6-3388-3b1d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>f493dcc6-3388-3b1d-bb20-6bb40e74a498</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>6dcef289-0c5f-3267-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <versionedComponentId>6dcef289-0c5f-3267-a086-0aad346fd854</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>0daf73d0-b141-3ad7-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>0daf73d0-b141-3ad7-be27-8ddc80a0a425</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>original</selectedRelationships>
+                    <source>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>f493dcc6-3388-3b1d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>f493dcc6-3388-3b1d-bb20-6bb40e74a498</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>74e5123d-8765-3d18-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <versionedComponentId>74e5123d-8765-3d18-bf9a-9e03c16825c7</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>960.0</x>
+                        <y>424.0</y>
+                    </bends>
+                    <destination>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>0daf73d0-b141-3ad7-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>0daf73d0-b141-3ad7-be27-8ddc80a0a425</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>f493dcc6-3388-3b1d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>f493dcc6-3388-3b1d-bb20-6bb40e74a498</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>986c9f60-16e5-3606-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <versionedComponentId>986c9f60-16e5-3606-bfbe-1a741ae168bc</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>f493dcc6-3388-3b1d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>f493dcc6-3388-3b1d-bb20-6bb40e74a498</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>7f540074-7a13-3ec3-0000-000000000000</groupId>
+                        <id>5e79bf40-9550-337f-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>5e79bf40-9550-337f-9491-70b63fed2b41</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <funnels>
+                    <id>0daf73d0-b141-3ad7-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1189.9997737175909</x>
+                        <y>335.0000162589569</y>
+                    </position>
+                    <versionedComponentId>0daf73d0-b141-3ad7-be27-8ddc80a0a425</versionedComponentId>
+                </funnels>
+                <processors>
+                    <id>5e79bf40-9550-337f-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>378.99977371759087</x>
+                        <y>54.00001625895692</y>
+                    </position>
+                    <versionedComponentId>5e79bf40-9550-337f-9491-70b63fed2b41</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.28.1</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Input Directory</key>
+<value>
+    <name>Input Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>File Filter</key>
+<value>
+    <name>File Filter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Path Filter</key>
+<value>
+    <name>Path Filter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Keep Source File</key>
+<value>
+    <name>Keep Source File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Recurse Subdirectories</key>
+<value>
+    <name>Recurse Subdirectories</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Polling Interval</key>
+<value>
+    <name>Polling Interval</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Ignore Hidden Files</key>
+<value>
+    <name>Ignore Hidden Files</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Age</key>
+<value>
+    <name>Minimum File Age</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Age</key>
+<value>
+    <name>Maximum File Age</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Size</key>
+<value>
+    <name>Minimum File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Size</key>
+<value>
+    <name>Maximum File Size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Input Directory</key>
+<value>D:\Tools\files</value>
+                            </entry>
+                            <entry>
+<key>File Filter</key>
+<value>studentinfo.xlsx</value>
+                            </entry>
+                            <entry>
+<key>Path Filter</key>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>10</value>
+                            </entry>
+                            <entry>
+<key>Keep Source File</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Recurse Subdirectories</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Polling Interval</key>
+<value>0 sec</value>
+                            </entry>
+                            <entry>
+<key>Ignore Hidden Files</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Age</key>
+<value>0 sec</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Age</key>
+                            </entry>
+                            <entry>
+<key>Minimum File Size</key>
+<value>0 B</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Size</key>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>60 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GetFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GetFile</type>
+                </processors>
+                <processors>
+                    <id>f493dcc6-3388-3b1d-0000-000000000000</id>
+                    <parentGroupId>7f540074-7a13-3ec3-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>376.0</x>
+                        <y>280.0</y>
+                    </position>
+                    <versionedComponentId>f493dcc6-3388-3b1d-bb20-6bb40e74a498</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-poi-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.28.1</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>extract-sheets</key>
+<value>
+    <name>extract-sheets</name>
+</value>
+                            </entry>
+                            <entry>
+<key>excel-extract-first-row</key>
+<value>
+    <name>excel-extract-first-row</name>
+</value>
+                            </entry>
+                            <entry>
+<key>excel-extract-column-to-skip</key>
+<value>
+    <name>excel-extract-column-to-skip</name>
+</value>
+                            </entry>
+                            <entry>
+<key>excel-format-values</key>
+<value>
+    <name>excel-format-values</name>
+</value>
+                            </entry>
+                            <entry>
+<key>excel-format-booleans</key>
+<value>
+    <name>excel-format-booleans</name>
+</value>
+                            </entry>
+                            <entry>
+<key>CSV Format</key>
+<value>
+    <name>CSV Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Value Separator</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Value Separator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Header Line</key>
+<value>
+    <name>Include Header Line</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Quote Character</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Quote Character</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Escape Character</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Escape Character</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Comment Marker</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Comment Marker</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Null String</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Null String</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Trim Fields</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Trim Fields</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Quote Mode</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Quote Mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Record Separator</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Record Separator</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include Trailing Delimiter</key>
+<value>
+    <dependencies>
+        <dependentValues>custom</dependentValues>
+        <propertyName>CSV Format</propertyName>
+    </dependencies>
+    <name>Include Trailing Delimiter</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>extract-sheets</key>
+<value>Student</value>
+                            </entry>
+                            <entry>
+<key>excel-extract-first-row</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>excel-extract-column-to-skip</key>
+                            </entry>
+                            <entry>
+<key>excel-format-values</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>excel-format-booleans</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>CSV Format</key>
+<value>custom</value>
+                            </entry>
+                            <entry>
+<key>Value Separator</key>
+<value>,</value>
+                            </entry>
+                            <entry>
+<key>Include Header Line</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Quote Character</key>
+<value>"</value>
+                            </entry>
+                            <entry>
+<key>Escape Character</key>
+<value>\</value>
+                            </entry>
+                            <entry>
+<key>Comment Marker</key>
+                            </entry>
+                            <entry>
+<key>Null String</key>
+                            </entry>
+                            <entry>
+<key>Trim Fields</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Quote Mode</key>
+<value>NONE</value>
+                            </entry>
+                            <entry>
+<key>Record Separator</key>
+<value>\n</value>
+                            </entry>
+                            <entry>
+<key>Include Trailing Delimiter</key>
+<value>false</value>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ConvertExcelToCSVProcessor</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>original</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.poi.ConvertExcelToCSVProcessor</type>
+                </processors>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>Reading Excel</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>06/13/2025 14:42:40 IST</timestamp>
+</template>
